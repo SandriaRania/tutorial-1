@@ -43,11 +43,12 @@ public class ProductServiceImpl implements ProductService {
                 return;
             }
         }
-      
-    @Override
-    public void setId(String productId) {
-        tempId = productId;
     }
+
+        @Override
+        public void setId(String productId) {
+            tempId = productId;
+        }
 
     @Override
     public Product edit(Product updatedProduct) {
