@@ -9,11 +9,4 @@ public class Product {
     private String productName;
     private int productQuantity;
 
-    public void setProductId(String productId) {
-        this.productId = productId;
-    }
-
-    public String getProductId() {
-        return this.productId;
-    }
 }
