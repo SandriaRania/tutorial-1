@@ -19,7 +19,7 @@ workflow saya mirip semua tanpa terlihat progress dan perubahannya. Salah satu s
 lakukan di masa depan adalah membuat branch lain khusus untuk perubahan-perubahan yang berhubungan dengan
 branch lainnya, dan memastikan saya tidak akan mencampur-aduk workflow saya ketika mencommit suatu perubahan. 
 
-Reflection 2: \
+Reflection 2: 
 1. After writing the unit test, how do you feel? How many unit tests should be made in a
 class? How to make sure that our unit tests are enough to verify our program? It would be
 good if you learned about code coverage. Code coverage is a metric that can help you
@@ -36,7 +36,7 @@ kode kita akan sempurna. Bahkan jika kita memiliki 100% code coverage pun, mungk
 terpikirkan, sehingga kode kita tidak sepenuhnya pasti bebas dari error dan bugs, kecuali yang sudah kita 
 pikirkan dan pastikan aman dengan unit-test yang dirancang sebelumnya.
 
-3. Suppose that after writing the CreateProductFunctionalTest.java along with the
+2. Suppose that after writing the CreateProductFunctionalTest.java along with the
 corresponding test case, you were asked to create another functional test suite that
 verifies the number of items in the product list. You decided to create a new Java class
 similar to the prior functional test suites with the same setup procedures and instance
