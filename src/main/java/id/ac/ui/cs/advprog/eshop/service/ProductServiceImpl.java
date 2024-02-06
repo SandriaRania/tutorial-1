@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 @Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
     private ProductRepository productRepository;
+    private String tempId = "";
     private static int lastProductId = 0;
 
     @Override
@@ -32,14 +32,18 @@ public class ProductServiceImpl implements ProductService {
         return allProduct;
     }
 
+    @Override
     public void delete(String productId) {
-        Iterator<Product> productIterator = productRepository.findAll();
-        while (productIterator.hasNext()) {
-            Product product = productIterator.next();
-            if (product.getProductId().equals(productId)) {
-                productIterator.remove();
-                return;
-            }
-        }
+        productRepository.delete(productId);
+    }
+
+    @Override
+    public void setId(String productId) {
+        tempId = productId;
+    }
+
+    @Override
+    public void edit(Product updatedProduct) {
+        productRepository.edit(tempId, updatedProduct);
     }
 }
