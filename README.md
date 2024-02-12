@@ -1,3 +1,29 @@
+Modul 2: \
+1. List the code quality issue(s) that you fixed during the exercise and explain your strategy
+
+Saya menggunakan SonarCloud untuk mengecek kode saya. Saat berhasil tersambung dengan repository
+saya, muncul laporan bahwa kode saya memiliki 1 Bug dalam kategori Reliability dan 2 Code Smells
+dalam kategori Maintanibility.
+
+Mengenai bug, masalah yang saya dapat adalah, ternyata table saya dalam ProductList.html memerlukan 
+sebuah deskripsi, maka salah satu solusi yang saya lakukan dengan melihat opsi yang disediakan SonarCloud
+adalah menambahkan deskripsi <p> sebelum <table> lalu menggunakan atribut aria-describedby untuk merujuk
+ke deskripsi tersebut.
+
+Selanjutnya adalah Code Smells pertama, yaitu pada ProductRepository.java, saya harus memastikan bahwa remove()
+pada function delete berfungsi dengan benar (iterasi pada seluruh elemen list), maka solusinya adalah merubah
+loop menjadi for (int i = productData.size() - 1; i >= 0; i--) { agar menyesuaikan dengan elemen yang
+berkurang.
+
+Terakhir untuk Code Smells kedua, pada ProductServiceImpl.java, lastProductId berupa static field diupdate
+di non-static set, maka solusinya adalah membuat fungsi updateId static terpisah yang akan dipanggil 
+setiap membuat produk.
+
+2. Look at your CI/CD workflows (GitHub)/pipelines (GitLab). Do you think the current
+   implementation has met the definition of Continuous Integration and Continuous
+   Deployment? Explain the reasons (minimum 3 sentences)!
+
+
 Modul 1: \
 Reflection 1: \
 You already implemented two new features using Spring Boot. Check again your source code

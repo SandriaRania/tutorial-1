@@ -16,9 +16,12 @@ public class ProductServiceImpl implements ProductService {
     private String tempId = "";
     private static int lastProductId = 0;
 
+    static void updateId() {
+        lastProductId++;
+    }
     @Override
     public Product create(Product product) {
-        lastProductId++;
+        updateId();
         product.setProductId(Integer.toString(lastProductId));
         productRepository.create(product);
         return product;
