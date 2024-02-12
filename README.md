@@ -1,4 +1,4 @@
-Modul 2: \
+Modul 2: 
 1. List the code quality issue(s) that you fixed during the exercise and explain your strategy
 
 Saya menggunakan SonarCloud untuk mengecek kode saya. Saat berhasil tersambung dengan repository
@@ -22,6 +22,12 @@ setiap membuat produk.
 2. Look at your CI/CD workflows (GitHub)/pipelines (GitLab). Do you think the current
    implementation has met the definition of Continuous Integration and Continuous
    Deployment? Explain the reasons (minimum 3 sentences)!
+
+Ya, menurut saya workflow saya pada saat ini telah memenuhi definisi CI/CD karena telah mengautomotatisasi
+job yang perlu dilakukan dengan menggunakan tools yang tersedia. Sebagai contoh, saya telah menggunakan tools Scorecard
+untuk mengecek workflow kode saya dan memastikan kode saya telah bekerja dengan baik. Selain itu, saya juga menambah
+tools Sonarcloud untuk mengecek suatu aspek lain dari kode saya, yaitu aspek clean code. Dengan menggunakan tools Sonarcloud, 
+saya dapat merapikan kode saya sesuai prinsip yang berlaku secara umum untuk memastikan reliabilitas dan pemeliharaan.
 
 
 Modul 1: \
