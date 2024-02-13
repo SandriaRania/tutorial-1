@@ -20,7 +20,7 @@ public class ProductController {
     public String createProductPage(Model model) {
         Product product = new Product();
         model.addAttribute("product", product);
-        return "CreateProduct";
+        return "CreateProduct.html";
     }
 
     @PostMapping("/create")
@@ -33,7 +33,7 @@ public class ProductController {
     public String productListPage(Model model) {
         List<Product> allProducts = service.findAll();
         model.addAttribute("products", allProducts);
-        return "ProductList";
+        return "ProductList.html";
     }
   
     @GetMapping("/delete/{productId}")
@@ -47,7 +47,7 @@ public class ProductController {
         service.setId(productId);
         Product product = new Product();
         model.addAttribute("product", product);
-        return "EditProduct";
+        return "EditProduct.html";
     }
 
     @PostMapping("/edit/{productId}")
