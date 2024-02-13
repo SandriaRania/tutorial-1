@@ -29,6 +29,9 @@ untuk mengecek workflow kode saya dan memastikan kode saya telah bekerja dengan 
 tools Sonarcloud untuk mengecek suatu aspek lain dari kode saya, yaitu aspek clean code. Dengan menggunakan tools Sonarcloud, 
 saya dapat merapikan kode saya sesuai prinsip yang berlaku secara umum untuk memastikan reliabilitas dan pemeliharaan.
 
+Link aplikasi: https://eshop-rania-tutorial-1.koyeb.app/ 
+Sudah bisa deploy tapi tidak ada isinya
+
 
 Modul 1: \
 Reflection 1: \
