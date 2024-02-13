@@ -5,8 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "id.ac.ui.cs.advprog.eshop.controller, " + "id.ac.ui.cs.advprog.eshop.model, "
-		+ "id.ac.ui.cs.advprog.eshop.repository, " + "id.ac.ui.cs.advprog.eshop.service")
+@ComponentScan(basePackages = "id.ac.ui.cs.advprog.eshop")
 public class EshopApplication {
 
 	public static void main(String[] args) {
