@@ -1,3 +1,8 @@
+Modul 3:
+1) Explain what principles you apply to your project!
+2) Explain the advantages of applying SOLID principles to your project with examples.
+3) Explain the disadvantages of not applying SOLID principles to your project with examples.
+
 Modul 2: 
 1. List the code quality issue(s) that you fixed during the exercise and explain your strategy
 
