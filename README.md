@@ -1,5 +1,14 @@
 Modul 3:
 1) Explain what principles you apply to your project!
+Dari kelima prinsip SOLID, saya telah mengimplementasikan setidaknya tiga dari lima prinsip itu, yaitu
+Single Responsibility Principle
+
+
+
+
+
+
+
 2) Explain the advantages of applying SOLID principles to your project with examples.
 3) Explain the disadvantages of not applying SOLID principles to your project with examples.
 
