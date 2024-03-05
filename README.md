@@ -1,3 +1,31 @@
+Modul 3:
+1) Explain what principles you apply to your project!
+Dari kelima prinsip SOLID, saya telah mengimplementasikan setidaknya tiga dari lima prinsip itu, yaitu
+Single Responsibility Principle(SRP), Interface Segregation Principle(ISP), dan Dependency Inversions Principle(DIP).
+
+Untuk menerapkan SRP dan ISP, saya memisah setiap fungsi dalam CarRepository menjadi fungsi dalam file masing-masing, sehingga
+ketika saya ingin merubah salah satu fungsi, hal ini tidak akan memengaruhi fungsi lainnya. Selain itu, hal ini dapat 
+mengurangi kemungkinan ditambahnya interface yang kurang relevan dan memberikan penampilan yang lebih ringkas dan enak dilihat.
+
+Untuk menerapkan DIP, saya memisah CarController yang sebelumnya extend ProductController menjadi file sendirinya, sehingga
+mengubah agar CarController tidak sepenuhnya bergantung pada ProductController. Selain itu, saya juga menambah HomeController
+sebagai titik awal dari kedua controller tersebut.
+
+2) Explain the advantages of applying SOLID principles to your project with examples.
+
+Saya merasa saya akan bisa mengurangi jumlah error yang tidak diantisipasi dengan menggunakan prinsip SOLID. Sebagai contoh,
+ketika saya mengedit sesuatu seperti CarCreate, saya akan merasa lega bahwa hal ini tidak akan memengaruhi CarDelete, CarUpdate,
+dan lainnya, sehingga saya bisa memastikan bahwa seluruh error yang akan muncul akan muncul hanya karena CarCreate, 
+dan bukan karena faktor di luar fungsi tersebut.
+
+3) Explain the disadvantages of not applying SOLID principles to your project with examples.
+
+Saya merasa lebih bingung ketika saya belum menggunakan prinsip SOLID dalam proyek saya. Sebagai contoh, sebelum pemisahan 
+di controller, saya khawatir bahwa error di salah satu fungsi akan berdampak secara keseluruhan. Ketika yang muncul hanyalah
+WhiteLabel Error dengan berbagai baris error yang saya tidak mengerti, tentunya saya akan merasa kebingungan apakah yang 
+bermasalah hanyalah di bagian CarController yang saya edit sebelumnya, atau karena suatu hal yang saya tidak ketahui telah
+berdampak dan membuat masalah di ProductController.
+
 Modul 2: 
 1. List the code quality issue(s) that you fixed during the exercise and explain your strategy
 
