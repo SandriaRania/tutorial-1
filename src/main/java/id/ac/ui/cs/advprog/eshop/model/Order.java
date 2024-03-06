@@ -42,4 +42,12 @@ public class Order {
             throw new IllegalArgumentException();
         }
     }
+
+    public void clearOrder() {
+        this.id = null;
+        this.products = null;
+        this.orderTime = null;
+        this.author = null;
+        this.status = null;
+    }
 }
