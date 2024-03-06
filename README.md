@@ -1,3 +1,25 @@
+Modul 4:
+You have followed the Test-Driven Development workflow in the Exercise. Now answer these  questions:
+
+1. Reflect based on Percival (2017) proposed self-reflective questions (in “Principles and Best  Practice of Testing” submodule, chapter “Evaluating Your Testing Objectives”), whether this  TDD flow is useful enough for you or not. If not, explain things that you need to do next time  you make more tests.
+
+Ya, menurut saya flow dari kerja saya sudah lebih baik dari sebelumnya. Berdasarkan prinsip-prinsip yang diproposalkan Percival (2017): \
+•Pertama dari segi correctness, menurut saya tes-tes yang sudah diimplementasikan telah mencakup sebagian besar kemungkinan error dan bug dari program. Walaupun tidak bisa dipungkiri bahwa sebagian besar bukan berarti seluruhnya, dan masih ada kemungkinan untuk bug, untuk hal tersebut mungkin saya harus mempertimbangkannya lagi jika sempat. \
+•Kedua dari segi maintainability, saya merasa saat saya refactor, kemungkinan error pada tes saya kecil. Hal ini karena kode yang di hardcode telah diubah, sehingga ketika terjadi refactor seharusnya tidak akan memengaruhi tes begitu parah. \
+•Ketiga, segi productive workflow, menurut saya, saya dapat mempertahankan workflow dengan alur yang cepat dan lancar ketika mengintegrasikan tes-tes saya. Tidak ada tes yang memakan waktu terlalu lama untuk digunakan sehingga menghambat workflow saya. \
+Sebagai kesimpulan, berdasarkan ketiga kriteria dari "art of balancing", saya merasa flow ini sudah sesuai berdasarkan prinsip yang berlaku.
+
+
+2. You have created unit tests in Tutorial. Now reflect whether your tests have successfully  followed F.I.R.S.T. principle or not. If not, explain things that you need to do the next time you create more tests.
+
+Kelima prinsip F.I.R.S.T adalah sebagai berikut: \
+•Fast, berarti tes-tes sudah berjalan secepat mungkin. Saya merasa tes saya sudah sangat simpel dan jelas tujuannya sehingga cukup cepat mendapat hasilnya. \
+•Isolated, yang berarti terisolasi dengan test case lain. Saya merasa tidak ada tes yang bergantung pada tes lainnya, dan semua berfungsi sesuai perintah yang tertera di setiap fungsi. \
+•Repeatable, berarti konsisten. Saya merasa test case yang saya buat dapat memberikan hasil yang konsisten setiap kali karena tidak ada variabel yang mungkin berubah-berubah dengan sendirinya kecuali dalam kondisi tertentu. \
+•Self-validating, yang berarti ketat dalam ketentuannya untuk meloloskan atau menggagalkan tes. Saya merasa seluruh tes sudah mengaplikasikan ini dengan mengetes satu kondisi saja dalam setiap tes, dan jika ada satu test-case yang mengecek beberapa hal pun, umumnya hanya mengecek beberapa atribut dari objek yang sama (id, author, status, dll). \
+•Thorough, yang berarti mencakup seluruh hal. Tes yang dibuat masing-masing mengecek hal yang berbeda satu sama lain, dan saya merasa sudah mencakup sebagian besar kasus dalam jumlah terkecil, walaupun tidak menutup kemungkinan masih ada beberapa kasus yang terlewat. \
+Sebagai kesimpulan, saya merasa tes-tes yang telah dintegrasikan sudah mengaplikasikan prinsip F.I.R.S.T yang telah tertera.
+
 Modul 3:
 1) Explain what principles you apply to your project!
 Dari kelima prinsip SOLID, saya telah mengimplementasikan setidaknya tiga dari lima prinsip itu, yaitu
